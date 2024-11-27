@@ -1,0 +1,107 @@
+.permissions-page {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-image: url('../assets/background.jpeg'); /* Correct relative path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  min-height: 100vh;
+  color: #ffffff; /* Adjusts text color for contrast */
+}
+
+.permissions-page h1 {
+  color: #4a90e2;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.permissions-page p {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.permissions-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.permission-card {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 300px;
+}
+
+.permission-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.permission-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.permission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.permissions-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.permissions-page li {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  color: #333;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.permissions-page li button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.permissions-page li button:hover {
+  background-color: #357abd;
+}
+
+.add-permission-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-permission-btn:hover {
+  background-color: #357abd;
+}

@@ -1,0 +1,100 @@
+.users-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-image: url('../assets/background.jpeg'); /* Correct relative path */
+  background-color: #f4f4f9;
+  min-height: 100vh; /* Ensures the page fills the entire height of the viewport */
+  box-sizing: border-box; /* Includes padding and borders in the height calculation */
+}
+
+  
+  .users-page h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-user-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-user-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .users-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border-radius: 10px; /* Adjust the value for desired curve */
+    overflow: hidden;
+  }
+  
+  .users-table th, .users-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .users-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .users-table button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .users-table button:hover {
+    background-color: green;
+  }
+  
+  .users-table button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .users-table button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute; /* Changed from absolute to fixed */
+    bottom: 200px; /* Positioning it at the lower part of the page */
+    right: 100px; /* Aligns it to the right */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .back-button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+  }
+  

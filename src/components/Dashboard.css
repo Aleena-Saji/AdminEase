@@ -1,0 +1,118 @@
+/* Dashboard Container */
+.dashboard {
+    font-family: Times New Roman, serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    background-image: url('../assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Header Section */
+.dashboard-header {
+    display: flex; /* Arrange header items in a row */
+    justify-content: space-between; /* Space between logo/title and buttons */
+    align-items: center; /* Align vertically in the same line */
+    background-color: #007bff;
+    padding: 1px;
+    color: white;
+    
+}
+
+/* Button Navigation Section */
+.dashboard-header nav {
+    display: flex; /* Arrange buttons in a row */
+    gap: 10px; /* Spacing between buttons */
+}
+
+/* Individual Button Styling */
+.dashboard-header nav button {
+    background-color: transparent; /* No background color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border: 2px solid white; /* White border */
+    border-radius: 25px; /* Curved edges */
+    font-size: 1rem; /* Text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.dashboard-header nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Click Effect */
+.dashboard-header nav button:active {
+    background-color: rgba(255, 255, 255, 0.3); /* Stronger background on click */
+    transform: scale(0.98); /* Shrink effect on click */
+}
+
+
+
+/* Overview Section */
+.overview {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Activity Section */
+.activity {
+    margin-top: 40px;
+}
+
+.activity h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.activity ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity li:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.dashboard-footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 40px;
+}

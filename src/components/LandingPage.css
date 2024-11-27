@@ -1,0 +1,138 @@
+/* Main Container */
+.landing-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/background.jpeg'); /* Correct relative path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Split Layout for Login Transition */
+.landing-container.split .left-section {
+    flex: 0.5;
+}
+
+.landing-container.split .right-section {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.left-section h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    font-family: Times New Roman;
+}
+
+.left-section p {
+    position: absolute;
+    top: 200px; /* Spacing below the heading */
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    padding: 0 10%; /* Add padding for better width management */
+}
+
+.left-section button {
+    background-color: #007bff; /* Initial button color */
+    color: white;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.left-section button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.left-section button:active {
+    background-color: #004085; /* Even darker blue when clicked */
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%); /* Start off-screen */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2); /* Shadow on the left edge */
+}
+
+.landing-container.split .right-section {
+    transform: translateX(0); /* Slide into view */
+}
+
+/* Login Form */
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .login-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form .login-btn:hover {
+    background-color: #218838;
+}
